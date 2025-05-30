@@ -1,3 +1,20 @@
+devconnect/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   └── sign up.jsx
+│   ├   └──sign in.jsx
+│   ├── context/
+|   |   └──onboarding page.jsx
+│   │   └── dashboard.jsx 
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── tailwind.config.js
+├── vite.config.js
+├── package.json
+└── README.md
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
