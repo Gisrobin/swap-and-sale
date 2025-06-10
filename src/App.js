@@ -1,9 +1,6 @@
 import React from 'react';
-import Signin from './Components/Signin';
+import Signin from './Component';
 import './index.css';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import OnboardingPage from './context/onboarding_page.js';
-
 function App() {
   return (
     <BrowserRouter>
