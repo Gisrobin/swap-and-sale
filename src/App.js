@@ -1,6 +1,6 @@
 import React from 'react';
 import Signin from './Components/Signin';
-import './index
+import './index.css';
 // import { Routes, Route } from 'react-router-dom';
 
 function App() {
