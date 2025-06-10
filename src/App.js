@@ -4,6 +4,8 @@ import Dashboard from './context/dashboard';
 import { Route } from 'react-router-dom';
 
 
+import Signin from './Component';
+import './index.css';
 function App() {
   return (
     <>
