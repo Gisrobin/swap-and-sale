@@ -16,6 +16,7 @@ import imageg from '../context/sanju-pandita-G9UI8uFGRxY-unsplash.jpg';
 import imagelaptop from '../context/howard-bouchevereau-RSCirJ70NDM-unsplash.jpg';
 import clipper from '../context/andrea-donato-zC1CL05YAas-unsplash.jpg';
 
+
 const Dashboard = () => {
   const images = [image1, image2, image3, image4];
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -71,8 +72,12 @@ const Dashboard = () => {
   };
 
   return (
-    <div>
+    <div style={{height:'100vh',
+      overflow: 'auto'
+    }}>
       <div style={{
+        position: 'fixed',
+        zIndex: '20',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',

@@ -1,10 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom"; // <-- Add useNavigate here
 import onboardingPage from "../images/onboarding_page.jpg"; // Adjusted path for your Images folder
 import iconImage from "../images/icon.png"; // Adjusted path for your Images folder
 import "./onboarding_page.css"; // Ensure the CSS file is correctly imported
 
-const OnboardingPage = () => {
+function OnboardingPage() {
+  const navigate = useNavigate();
+
+  const handleNext = () => {
+    navigate('/signin');
+  };
+
   return React.createElement(
     "div",
     {
@@ -128,9 +134,9 @@ const OnboardingPage = () => {
         ]
       ),
       React.createElement(
-        Link,
+        "button",
         {
-          to: "/next-page",
+          onClick: handleNext,
           className: "onboarding-button",
           style: {
             position: "absolute",
@@ -151,6 +157,8 @@ const OnboardingPage = () => {
             boxShadow: "0 2px 5px rgba(0, 0, 0, 0.2)",
             transition: "background-color 0.3s",
             overflow: "hidden",
+            border: "none",
+            cursor: "pointer",
           },
         },
         [
@@ -176,6 +184,7 @@ const OnboardingPage = () => {
       ),
     ]
   );
-};
+}
+
 
 export default OnboardingPage;
