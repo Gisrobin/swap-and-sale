@@ -26,18 +26,19 @@ function OnboardingPage() {
         flexDirection: "column",
         alignItems: "center",
         position: "relative",
-        overflowY: "auto", // Enable vertical scroll
+        overflowY: "auto",
+        
         boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
         margin: "0 auto",
         padding: "0 2vw",
       }}
     >
-      {/* Move welcome text upwards */}
+      {/* Move welcome text to the very top */}
       <div
         className="onboarding-text"
         style={{
           textAlign: "center",
-          marginTop: "8vh",
+          marginBottom: "20vh", // Reduced margin to move it up
           color: "#fff",
           width: "100%",
           maxWidth: "400px",
@@ -47,6 +48,7 @@ function OnboardingPage() {
           style={{
             fontSize: "clamp(1.5rem, 5vw, 2.2rem)",
             fontWeight: "bold",
+
             margin: "0 0 1vh 0",
           }}
         >
@@ -73,6 +75,7 @@ function OnboardingPage() {
           height: "25vw",
           minWidth: "100px",
           minHeight: "100px",
+          marginBottom: "10vh",
           maxWidth: "150px",
           maxHeight: "150px",
           display: "flex",
@@ -84,9 +87,11 @@ function OnboardingPage() {
           className="ripple-1"
           style={{
             position: "absolute",
+             marginBottom: "20vh",
             width: "150%",
             height: "150%",
             borderRadius: "50%",
+            backgroundColor: "rgba(255, 255, 255, 0.1)",
             border: "2px solid rgba(255, 255, 255, 0.3)",
             animation: "ripple 3s infinite",
           }}
@@ -96,6 +101,7 @@ function OnboardingPage() {
           style={{
             position: "absolute",
             width: "200%",
+             marginBottom: "20vh",
             height: "200%",
             borderRadius: "50%",
             border: "2px solid rgba(255, 255, 255, 0.2)",
@@ -109,6 +115,7 @@ function OnboardingPage() {
             width: "250%",
             height: "250%",
             borderRadius: "50%",
+             marginBottom: "20vh",
             border: "2px solid rgba(255, 255, 255, 0.1)",
             animation: "ripple 3s infinite 1s",
           }}
@@ -121,6 +128,7 @@ function OnboardingPage() {
             height: "60%",
             maxWidth: "60px",
             maxHeight: "60px",
+             marginBottom: "20vh",
             objectFit: "contain",
           }}
           className="onboarding-icon-img"
@@ -134,6 +142,7 @@ function OnboardingPage() {
         style={{
           position: "fixed",
           bottom: "5vh",
+           marginBottom: "5%",
           left: "50%",
           transform: "translateX(-50%)",
           background:
@@ -153,7 +162,7 @@ function OnboardingPage() {
           transition: "background-color 0.3s",
           overflow: "hidden",
           border: "none",
-          marginBottom: "10%",
+          marginTop: "10%",
           cursor: "pointer",
         }}
       >

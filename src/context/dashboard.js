@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom'; // <-- Add this import
+import { useNavigate } from 'react-router-dom';
 import { FaSearch, FaBell, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import image1 from '../context/ec361506aa17033dfddedd9e31134519.jpg';
 import image2 from '../context/8973317104f7a5a83f321e2318f08af6.jpg';
@@ -19,7 +19,7 @@ import clipper from '../context/andrea-donato-zC1CL05YAas-unsplash.jpg';
 
 
 const Dashboard = () => {
-  const navigate = useNavigate(); // <-- Add this line
+  const navigate = useNavigate();
 
   const images = [image1, image2, image3, image4];
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -75,24 +75,29 @@ const Dashboard = () => {
   };
 
   return (
-    <div style={{height:'100vh', overflow: 'auto'}}>
-      {/* Add a button to route to onboarding */}
+    <div style={{ height: '100vh', overflow: 'auto' }}>
+      {/* Replace "Go to Onboarding" button with a back icon */}
       <button
         style={{
           position: 'fixed',
           top: 20,
-          right: 20,
-          zIndex: 100,
-          background: '#1E90FF',
-          color: '#fff',
+          left: 20,
+          zIndex: 101,
+          background: 'transparent',
+          color: '#1E90FF',
           border: 'none',
-          borderRadius: '5px',
-          padding: '8px 16px',
-          cursor: 'pointer'
+          borderRadius: '50%',
+          padding: '8px',
+          cursor: 'pointer',
+          fontSize: '1.7rem',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center'
         }}
         onClick={() => navigate('/onboarding')}
+        aria-label="Back"
       >
-        Go to Onboarding
+        <FaArrowLeft />
       </button>
       <div style={{
         position: 'fixed',
