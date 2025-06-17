@@ -18,31 +18,39 @@ function Signin() {
   };
 
   return (
-    <div className="container">
+    <div
+      className="container signin-scroll"
+      style={{
+        minHeight: "100vh",
+        maxHeight: "100vh",
+        overflowY: "auto",
+        boxSizing: "border-box",
+        padding: "0 2vw",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "flex-start",
+      }}
+    >
       <div className="all-icons">
-      <div className="time"><span>9:41</span></div>
-
-      <div className='icons'>
-        <span><i class="fa-solid fa-signal"></i></span>
-        <span><i class="fa-solid fa-wifi"></i></span>
-        <span><i class="fa-solid fa-battery-full"></i></span>
+        <div className="time"><span>9:41</span></div>
+        <div className='icons'>
+          <span><i className="fa-solid fa-signal"></i></span>
+          <span><i className="fa-solid fa-wifi"></i></span>
+          <span><i className="fa-solid fa-battery-full"></i></span>
+        </div>
       </div>
-    </div>
 
       <div className="arrow">
-      <span><i class="fa-solid fa-arrow-left"></i></span>
+        <span><i className="fa-solid fa-arrow-left"></i></span>
       </div>
 
-      <div className="texts" >
-
-        <p className="p1">Login and <br></br>setup your profile</p>
-
+      <div className="texts">
+        <p className="p1">Login and <br />setup your profile</p>
         <p className="p2">complete your sign up to access the exclusive features</p>
       </div>
 
-      <div className="container2" >
-
-      <div className="form">
+      <div className="container2">
+        <div className="form">
           <form onSubmit={handleSignIn}>
             <div className="login-signup">
               <button className="login" type="button">LOG IN</button>
@@ -56,6 +64,7 @@ function Signin() {
                 placeholder="Type your email"
                 value={email}
                 onChange={e => setEmail(e.target.value)}
+                style={{ width: "100%", minWidth: 0 }}
               />
             </div>
             <div className="password">
@@ -66,34 +75,28 @@ function Signin() {
                 placeholder="Type your password"
                 value={password}
                 onChange={e => setPassword(e.target.value)}
+                style={{ width: "100%", minWidth: 0 }}
               />
             </div>
-            <button className="signinButton" type="submit">SIGN IN</button>
+            <button className="signinButton" type="submit" style={{ width: "100%", margin: "16px 0" }}>SIGN IN</button>
 
-          <div className="last-buttons">
-
-        
-        <div className="google">
-
-        <button className="google-button">
-          <img src={image3} alt="Google icon" className="google-image"/>
-          GOOGLE</button>
+            <div className="last-buttons">
+              <div className="google">
+                <button className="google-button" type="button" style={{ width: "100%" }}>
+                  <img src={image3} alt="Google icon" className="google-image" />
+                  GOOGLE
+                </button>
+              </div>
+              <div className="facebook">
+                <button className="facebook-icon" type="button" style={{ width: "100%" }}>
+                  <img src={image2} alt="Facebook logo" className="facebook-image" />
+                  FACEBOOK
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
-
-        <div className="facebook">
-
-        <button className="facebook-icon">
-
-          <img src={image2} alt="Favebook logo" className="facebook-image"
-          />
-          FACEBOOK</button>
-          
-        </div>
-        
-       </div>
-       </form>
       </div>
-     </div>
     </div>
   )
 }
