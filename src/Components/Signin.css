@@ -176,13 +176,13 @@
     margin-right: 8px;
   }
 
-  .all-icons,
+  /* .all-icons,
   .arrow{
     display: none;
-  }
+  } */
 
   @media (max-width: 768px){
-    .all-icons{
+    /* .all-icons{
      display: flex;
      color: white;
      gap: 550px; 
@@ -206,7 +206,7 @@
       border: 1px solid white;
       text-align: center;
       padding: 3px;
-    }
+    } */
 
     .container2{
       background-color: #011f4b;
@@ -247,7 +247,7 @@
 
           
   @media (max-width: 480px) {
-  .all-icons{
+  /* .all-icons{
      display: flex;
      color: white;
      gap: 210px; 
@@ -271,7 +271,7 @@
     border: 1px solid white;
     text-align: center;
     padding: 3px;
-}
+} */
 
 .container2{
     background-color: #011f4b;
