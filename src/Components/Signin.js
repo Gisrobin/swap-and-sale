@@ -20,18 +20,8 @@ function Signin() {
   return (
     <div className="container">
       <div className="all-icons">
-      <div className="time"><span>9:41</span></div>
-
-      <div className='icons'>
-        <span><i class="fa-solid fa-signal"></i></span>
-        <span><i class="fa-solid fa-wifi"></i></span>
-        <span><i class="fa-solid fa-battery-full"></i></span>
-      </div>
     </div>
 
-      <div className="arrow">
-      <span><i class="fa-solid fa-arrow-left"></i></span>
-      </div>
 
       <div className="texts" >
 
