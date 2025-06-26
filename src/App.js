@@ -1,4 +1,5 @@
 import React from 'react';
+import SignUpPage from './Components/SignUpPage';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Signin from './Components/Signin';
 import Dashboard from './context/dashboard.js';
@@ -35,6 +36,7 @@ function App() {
         <Route path="*" element={<Navigate to="/onboarding" />} />
       </Routes>
     </Router>
+
   );
 }
 
